@@ -71,5 +71,21 @@ namespace TicketClassLibrary.MSTests
             // Act
             car.Licenseplate = "ABCDEFGH"; // Dette er 8 tegn, hvilket bør kaste en undtagelse.
         }
+
+        [TestMethod]
+        public void CalculatePriceWithBrobizz_ShouldReturnPriceWithDiscount()
+        {
+            // Arrange
+            var car = new Car
+            {
+                HasBrobizz = true // Brobizz anvendes
+            };
+
+            // Act
+            double discountedPrice = car.CalculatePriceWithBrobizz();
+
+            // Assert med delta på grund af små forskelle i floating-point beregninger
+            Assert.AreEqual(240.0 * 0.95, discountedPrice, 0.01);
+        }
     }
 }

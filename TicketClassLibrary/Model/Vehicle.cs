@@ -31,10 +31,29 @@ namespace TicketClassLibrary.Model
         public DateTime Date { get; set; }
 
         /// <summary>
+        /// Angiver om Brobizz anvendes for rabat.
+        /// </summary>
+        public bool HasBrobizz { get; set; }
+
+        /// <summary>
         /// Returnerer prisen for at krydse broen. Skal implementeres i afledte klasser.
         /// </summary>
         /// <returns>Prisen som en double.</returns>
         public abstract double Price();
+
+        /// <summary>
+        /// Beregner prisen inklusive Brobizz rabat, hvis relevant.
+        /// </summary>
+        /// <returns>Den endelige pris som en double.</returns>
+        public double CalculatePriceWithBrobizz()
+        {
+            double basePrice = Price();
+            if (HasBrobizz)
+            {
+                return basePrice * 0.95; // 5% rabat
+            }
+            return basePrice;
+        }
 
         /// <summary>
         /// Returnerer køretøjstypen. Skal implementeres i afledte klasser.
