@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicketClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:TicketClassLibrary.Model.Car">
+            <summary>
+            Repræsenterer en bil, som krydser broen.
+            </summary>
+        </member>
+        <member name="M:TicketClassLibrary.Model.Car.Price">
+            <summary>
+            Returnerer den faste pris for at krydse broen.
+            </summary>
+            <returns>Prisen som en double (240 DKK).</returns>
+        </member>
+        <member name="M:TicketClassLibrary.Model.Car.VehicleType">
+            <summary>
+            Returnerer køretøjstypen som en streng.
+            </summary>
+            <returns>En streng, der repræsenterer køretøjstypen.</returns>
+        </member>
+        <member name="T:TicketClassLibrary.Model.MC">
+            <summary>
+            Repræsenterer en motorcykel (MC), som krydser broen.
+            </summary>
+        </member>
+        <member name="M:TicketClassLibrary.Model.MC.Price">
+            <summary>
+            Returnerer den faste pris for at krydse broen.
+            </summary>
+            <returns>Prisen som en double (125 DKK).</returns>
+        </member>
+        <member name="M:TicketClassLibrary.Model.MC.VehicleType">
+            <summary>
+            Returnerer køretøjstypen som en streng.
+            </summary>
+            <returns>En streng, der repræsenterer køretøjstypen.</returns>
+        </member>
+        <member name="T:TicketClassLibrary.Model.Vehicle">
+            <summary>
+            Baseklasse for køretøjer, der krydser broen.
+            </summary>
+        </member>
+        <member name="P:TicketClassLibrary.Model.Vehicle.Licenseplate">
+            <summary>
+            Nummerpladen på køretøjet. Må ikke være længere end 7 tegn.
+            </summary>
+        </member>
+        <member name="P:TicketClassLibrary.Model.Vehicle.Date">
+            <summary>
+            Dato for krydsning.
+            </summary>
+        </member>
+        <member name="P:TicketClassLibrary.Model.Vehicle.HasBrobizz">
+            <summary>
+            Angiver om Brobizz anvendes for rabat.
+            </summary>
+        </member>
+        <member name="M:TicketClassLibrary.Model.Vehicle.Price">
+            <summary>
+            Returnerer prisen for at krydse broen. Skal implementeres i afledte klasser.
+            </summary>
+            <returns>Prisen som en double.</returns>
+        </member>
+        <member name="M:TicketClassLibrary.Model.Vehicle.CalculatePriceWithBrobizz">
+            <summary>
+            Beregner prisen inklusive Brobizz rabat, hvis relevant.
+            </summary>
+            <returns>Den endelige pris som en double.</returns>
+        </member>
+        <member name="M:TicketClassLibrary.Model.Vehicle.VehicleType">
+            <summary>
+            Returnerer køretøjstypen. Skal implementeres i afledte klasser.
+            </summary>
+            <returns>En streng, der repræsenterer køretøjstypen.</returns>
+        </member>
+    </members>
+</doc>
