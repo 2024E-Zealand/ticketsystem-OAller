@@ -1,0 +1,53 @@
+[33mcommit 849de7af94a6a2ef7975744402d533d2e544edc0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Oliver Aller <ola001@edu.zealand.dk>
+Date:   Fri Oct 4 12:55:50 2024 +0200
+
+    Tilføjet OresundTicketLibrary med priser for Øresundsbron og tilhørende enhedstests
+
+[33mcommit 66298bc57928d7687b423ab12de2fc8033604d29[m
+Author: Oliver Aller <ola001@edu.zealand.dk>
+Date:   Fri Oct 4 12:49:09 2024 +0200
+
+    Tilføjet weekendrabat og brobizz-rabat med unit test til storebealttickets
+
+[33mcommit 2ef0eaecbb71e10c3260b6593b32a311ba6077ba[m
+Author: Oliver Aller <ola001@edu.zealand.dk>
+Date:   Fri Oct 4 12:46:40 2024 +0200
+
+    Afsluttet StoreBaeltTicketLibrary med weekend rabat og enhedstests
+
+[33mcommit e8d548eecdef1166cdd08185d9f5fc1c689b8175[m
+Author: Oliver Aller <ola001@edu.zealand.dk>
+Date:   Fri Oct 4 12:23:17 2024 +0200
+
+    Tilføjet Brobizz funktionalitet med 5% rabat og unit test for rabatten
+
+[33mcommit 43f15ac0e948e9d5c8150d891bd0e6bc62760c20[m
+Author: Oliver Aller <ola001@edu.zealand.dk>
+Date:   Fri Oct 4 12:20:38 2024 +0200
+
+    Tilføjet validering for Licenseplate længde og unit test for undtagelse
+
+[33mcommit 9c34a397d3d28db2ea21980db9bfdd408110b820[m
+Author: Oliver Aller <ola001@edu.zealand.dk>
+Date:   Fri Oct 4 12:15:25 2024 +0200
+
+    Refaktoreret Car og MC klasserne til at bruge arv fra Vehicle baseklasse
+
+[33mcommit 6306ac289caf6ed1f57e89397044cb93b78820de[m
+Author: Oliver Aller <ola001@edu.zealand.dk>
+Date:   Fri Oct 4 12:12:12 2024 +0200
+
+    Tilføjet MC klasse og unit tests
+
+[33mcommit 5b0ebf9c661b79e91e4dbb2b4487fe53aa3f1940[m
+Author: Oliver Aller <ola001@edu.zealand.dk>
+Date:   Fri Oct 4 12:08:54 2024 +0200
+
+    Tilføjet Car klasse og unittest
+
+[33mcommit 717cf1dbc09d55c9df30b13370e27f586a356328[m
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Wed Sep 25 15:58:42 2024 +0000
+
+    Initial commit
