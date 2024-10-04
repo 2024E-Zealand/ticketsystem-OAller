@@ -60,5 +60,16 @@ namespace TicketClassLibrary.MSTests
             // Assert
             Assert.AreEqual(expectedDate, car.Date);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void Licenseplate_ShouldThrowException_WhenLongerThan7Characters()
+        {
+            // Arrange
+            var car = new Car();
+
+            // Act
+            car.Licenseplate = "ABCDEFGH"; // Dette er 8 tegn, hvilket bør kaste en undtagelse.
+        }
     }
 }

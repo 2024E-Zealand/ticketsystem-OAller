@@ -7,10 +7,23 @@ namespace TicketClassLibrary.Model
     /// </summary>
     public abstract class Vehicle
     {
+        private string _licenseplate;
+
         /// <summary>
-        /// Nummerpladen på køretøjet.
+        /// Nummerpladen på køretøjet. Må ikke være længere end 7 tegn.
         /// </summary>
-        public string Licenseplate { get; set; }
+        public string Licenseplate
+        {
+            get { return _licenseplate; }
+            set
+            {
+                if (value.Length > 7)
+                {
+                    throw new ArgumentException("Nummerpladen må ikke være længere end 7 tegn.");
+                }
+                _licenseplate = value;
+            }
+        }
 
         /// <summary>
         /// Dato for krydsning.
@@ -30,4 +43,3 @@ namespace TicketClassLibrary.Model
         public abstract string VehicleType();
     }
 }
-
